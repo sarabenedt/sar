@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Boas Vindas</title>
 </head>
 <body>
-    <div id="welcomeMessage"></div>
-    <form>
-        <div class="password-container">
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password">
-            <i class="fa-eye toggle-password" onclick="togglePassword()"></i>
-        </div>
-    </form>
-    <img id="light" src="lampada-desligada.gif" alt="Lâmpada Desligada" width="100">
-    <button onclick="toggleLight()">Ligar/Desligar</button>
+    <section><h1 id="nome">nome</h1></section>
+    <section>
+        <img src="lampadas-desligada.gif" alt="" id="lamp">
+        <button id="btn-onoff"><span class="material-symbols-outlined" id="icon-onoff">toggle_on</span></button>
+    </section>
     
 </body>
 </html>

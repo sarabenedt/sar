@@ -1,38 +1,32 @@
-// inserir nome
+// inserir nome1
 let userName = prompt("Por favor, insira seu nome:");
-let welcomeMessage = document.createElement('div');
+let welcomeMessage = document.querySelector('#nome');
 if (userName) {
     welcomeMessage.textContent = "Bem-vindo, " + userName + "!";
-} else {
-    welcomeMessage.textContent = "Bem-vindo, visitante!";
 }
-welcomeMessage.style.marginTop = "20px";
-welcomeMessage.style.fontSize = "24px";
-welcomeMessage.style.color = "#333";
-document.body.appendChild(welcomeMessage);
+//lampada2
+const btn_onoff = document.querySelector('#btn-onoff')
+ const lampada = document.querySelector('#lamp') 
+ const icone_onoff = document.querySelector("#icon-onoff") 
+  const body = document.querySelector('body') 
+  let ligado = true
+   btn_onoff.addEventListener('click', () => {
+     if (ligado){
+        lampada.src = "lampada-ligada.gif"
+         icone_onoff.innerHTML = toggle_off 
+         body.style.backgroundColor = "black" 
+         body.style.color = 'white'
+          icone_onoff.style.color = 'white' 
+          ligado = false
+     } else { 
+            lampada.src = "lampada-desligada.gif" 
+     icone_onoff.innerHTML = 'toggle_on'
+      body.style.backgroundColor = "white" 
+      body.style.color = 'black'
+      icone_onoff.style.color = 'black'
+      ligado = true
+     }
+        } )
 
-//lampada
-function toggleLight() {
-    var light = document.getElementById("light");
-    if (light.src.includes("lampada-desligada.gif")) {
-        light.src = "lampada-ligada.gif";
-    } else {
-        light.src = "lampada-desligada.gif";
-    }
-}
-
-//senha
-function togglePassword() {
-    var passwordField = document.getElementById("password");
-    var toggleIcon = document.querySelector(".toggle-password");
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleIcon.classList.remove("fa-eye");
-        toggleIcon.classList.add("fa-eye-slash");
-    } else {
-        passwordField.type = "password";
-        toggleIcon.classList.remove("fa-eye-slash");
-        toggleIcon.classList.add("fa-eye");
-    }
-} 
+//senha3                                                                                                                                         
 
