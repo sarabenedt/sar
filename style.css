@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
 }
+
 #nome {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 24px;
     color: #fdf7f7;
 }
@@ -11,10 +11,18 @@ body {
     position: relative;
     display: inline-block;
 }
-.toggle-password {
+.btn-onoff{
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
+}
+.lamp{
+    border: #fdf7f7;
+}
+#ligado{
+    text-decoration: none;
+    border: none;
+    margin: none;
 }

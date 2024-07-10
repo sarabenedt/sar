@@ -9,11 +9,28 @@
 </head>
 <body>
     <section><h1 id="nome">nome</h1></section>
-    <section>
-        <img src="lampadas-desligada.gif" alt="" id="lamp">
-        <button id="btn-onoff"><span class="material-symbols-outlined" id="icon-onoff">toggle_on</span></button>
+    <section class="lamp">
+        <img src="lampada-ligada.gif" alt="" id="lamp">
+        <button id="btn-onoff"><span class="material-symbols-outlined" id="icon-onoff">
+                <img src="togle.png" alt="" id="ligado" height="10px" width="10px">
+            </span></button>
+
     </section>
-    
+    <section>
+        <div class="form-item">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+            <button id="btn-olho"><span class="material-symbols-outlined" id="icon-olho">
+                    <img src="icom1.png" alt="" id="ligado" height="10px" width="10px">
+                </span></button>
+            </button>
+        </div>
+    </section>
+    <div class="form-item">
+        <label for="senha_repete">Repita a senha</label>
+        <input type="password" name="senha_repete" id="senha_repete"><span id="erro"></span>
+        <button></button>
+    </div>
 </body>
 </html>
 
